@@ -1,0 +1,61 @@
+*{
+  margin:0;
+  padding:0;
+}
+header{
+  /*width:100%; 不要？*/
+  padding:30px 20px;
+  background-color: rgb(173, 42, 97);
+  display: flex;
+  justify-content:flex-end;
+}
+header>div{
+  background-color: rgb(212, 142, 149);
+  height:70px;
+  margin:0 10px;
+  flex-basis: 140px;
+}
+header>:first-child{
+  margin-right:auto;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+.main-box1{
+  width:300px;
+  background-color: rgb(162, 194, 159);
+}
+.main-box2{
+  padding:20px;
+  background-color:rgb(81, 179, 81);
+  max-width:700px;
+  flex-grow: 1;
+  display:flex;
+  flex-wrap: wrap;
+  /*align-content: center;*/
+}
+.main-box2>div{
+  height:130px;
+  background-color: rgb(202, 196, 115);
+  margin:10px;
+  width:200px;
+  flex-grow:1;
+}
+
+footer{
+  width:100%;
+  padding:20px;
+  background-color: rgb(40, 98, 145);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+footer>div{
+  margin:10px;
+  flex-basis: 45%;
+  max-width:600px;
+  background-color: cadetblue;
+  height:40px;
+}
